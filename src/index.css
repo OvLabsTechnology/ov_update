@@ -1,0 +1,1625 @@
+ /* This is used for giving height to header*/
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+@font-face {
+  font-family: "ethnocentric" ;
+  src: local("ethnocentric"), 
+  url("./Fonts/ethnocentric.ttf") format("TrueType");
+  }
+
+
+ .header{
+  height: 100px;
+  
+}
+
+ /* This is used for giving color and margin and also z-index to header*/
+.hPosAbsolute{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; 
+  background: transparent !important;
+  z-index: 9999;
+}
+
+ /* This is used for giving color and margin and also z-index to header*/
+.hPosSticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent !important;
+  z-index: 9999;
+}
+ /* This is used for giving height to 2nd slider */
+.slideCard2{
+  min-height: auto;
+}
+ /* This is used for adjusting the side red slider on the park page*/
+.indicatMainCon{
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  position: sticky;
+  top: 100px;
+}
+
+ /* This is used for giving width to slider and content of the slider on Park Page also Used for Adjusting its dynamics */
+.indicatCon{
+  width: 50px;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  height: 500px;
+}
+
+ /* This is used for adjusting the slider height and width on the park page*/
+.indicat{
+  width: 3px;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin-bottom: 5px;
+  /* border: 1px solid rgba(0, 0, 0, 0.15); */
+  border-radius: 10px;
+  cursor: pointer !important;
+  z-index: 9999;
+  transition: 2s;
+}
+ /* This is used for changing the slider color on Park Page*/
+.indicat.active{
+  background-color: rgb(2, 255, 242);
+  /* border: 1px solid rgb(192, 53, 64); */
+}
+.home{  
+   /* This css code is  use for the height of the home Page */
+  height: 100vh;
+  overflow: hidden;
+}
+ /* This is used for  adjusting the background Image on the Home page*/
+.homeBgCon{
+  height: 100vh;
+  /* height: 73vh; */
+  background-image: url('./images/homeBg.png');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  overflow: hidden;
+}
+ /* This is used for background Color to the park page*/
+.garden {
+  min-height: 100vh;
+  /* background-image: url('./images/homeBg.jpg'); */
+  background-image: url('./images/rodbg.jpg');
+}
+ /* This is used for giving mix-blend-mode to the rainbow present on the Home Page*/
+.homeRainBow{
+  mix-blend-mode: screen;
+  width: 100%;
+  position: fixed;
+  /* top: -145px;
+  height: 120vh; */
+  top: 0px;
+  height: 100vh;
+  /* height: 50vh; */
+  overflow: hidden;
+}
+ /* This is used for the Clouds Present on the page*/
+.homeCloudCon{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('./images/homeCloud.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 9999;
+  /* height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+/* for capsoul Shadow and animations */
+
+/* end for capsoul  */
+/* for Header Logo we see on Different Pages */
+
+/* animation logo style */
+
+/* design for garden and blueprint */
+.aniLogo{
+
+  /* on blurry background */
+
+  /* on white background */
+  width: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 37px;
+  padding: 1px;
+  position: relative;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.7em;
+ 
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logoText{
+  background: linear-gradient(30deg, #5cdeff, #568bff, #8988ff, #c895ff, #ff93ff, #ffc5b6, #ffffbe, #ffc5b6, #ff93ff, #c895ff, #8988ff, #568bff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animation 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate-reverse;
+}
+/* @keyframes animation {
+  from {
+    background-position: -300px;
+  }
+
+  to {
+    background-position: 300px;
+  }
+} */
+/* design for Home logo */
+.aniLogoHomes {
+
+  /* on blurry background */
+  width: 100px;
+  height: 37px;
+  padding: 1px;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  position: relative;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.7em;
+  color: rgb(88 199 250 / 100%);
+  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.aniLogoHome:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+.aniLogoHome:hover:before,
+.aniLogoHome:hover:after {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+
+.aniLogoHome::before {
+  content: "";
+  width: 104%;
+  height: 110%;
+  border-radius: 8px;
+  background-image: linear-gradient(var(--rotate), #fff, #5cdeff, #568bff, #8988ff, #c895ff, #fff, #ff93ff, #ffc5b6, #ffffbe, #fff);
+  position: absolute;
+  z-index: -1;
+  /* top: -1%; */
+  /* left: -2%; */
+  animation: spin 20s linear infinite;
+}
+
+.aniLogoHome::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 5);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(30px);
+  background-image: linear-gradient(var(--rotate), #fff, #5cdeff, #568bff, #8988ff, #c895ff, #fff, #ff93ff, #ffc5b6, #ffffbe, #fff);
+  opacity: 1;
+  transition: opacity .5s;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+
+  100% {
+    --rotate: 360deg;
+  }
+}
+
+.logoTextHome {
+  background: linear-gradient(30deg, #5cdeff, #568bff, #8988ff, #c895ff, #ff93ff, #ffc5b6, #ffffbe, #ffc5b6, #ff93ff, #c895ff, #8988ff, #568bff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animation 20s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate-reverse;
+}
+
+@keyframes animation {
+  from {
+    background-position: -300px;
+  }
+
+  to {
+    background-position: 300px;
+  }
+}
+/* end for header */
+/* .homeBar.nav-link {
+  background: #526e8d;
+  color: #847aff;
+}
+.homeBar.nav-link.active{
+  background-color: #ff7483;
+} */
+
+ /* This was used for giving padding and border also color to the navbar icons but we updated the code*/
+.nav-link{
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 5px;
+  margin-right: 15px;
+  font-size: 1em;
+  padding: 0.1rem 0.5rem !important;
+  font-weight: 500;
+}
+
+.SwiperDesktop.swiper {
+  width: 100%;
+  height: 100vh;
+  /* height: auto; */
+  /* height: 100%;
+  overflow: scroll; */
+}
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical>.swiper-pagination-bullets{
+  left: 10px !important;
+  right: auto !important;
+}
+.swiper-pagination-bullet {
+  background:rgb(0, 247, 255) !important;
+  height: 10vh !important;
+  border-radius: 10px !important;
+  width: 5px !important;
+}
+.SwiperDesktop > .swiper-wrapper > .swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  height: 100vh !important;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slidCon{
+  position: relative;
+}
+ /* Here you can adjust height and with of the image present on the Park Page*/
+.sliderGirl{
+  position: fixed;
+  /* top: 10px; */
+  /* z-index: 9999; */
+  width: 50%;
+  right: 0px;
+  height: 100vh;
+}
+ /* This is used for giving height to each Slider also to the content*/
+.customSlider{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* This is used for adjusting the each head present on the Park Page*/
+
+.c1Head{
+  font-size: 4rem;
+  padding-bottom: 1.2rem;
+  line-height: 3rem;
+  letter-spacing: -.02em;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+  
+}
+.Opacity10{
+  opacity: 0.1;
+}
+.fw900{
+  font-weight: 900;
+}
+.fw600{
+  font-weight: 600;
+}
+/* This is used for where we use Special gradient from here you can change the Colors of gradient*/
+.highlight{
+  /* This is used for the Special Gradient that we use on the first slide of the Park Page*/
+  background: linear-gradient(104deg, rgba(255, 130, 130, 0) .9%, #ff8282 2.4%, rgba(255, 130, 130, .5) 5.8%, rgba(255, 130, 130, .1) 93%, rgba(255, 130, 130, .7) 96%),
+  linear-gradient(183deg, rgba(130, 255, 173, 0), rgba(255, 107, 152, .3) 7.9%, rgba(255, 130, 130, 0) 15%);
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 7.5px;
+  text-shadow: -12px 12px 9.8px rgb(255 130 130 / 70%),
+  21px -18.1px 7.3px #fff,
+  -18.1px -27.3px 30px #fff;
+}
+/* This is used for where we use the button on the Park page on each Slider*/
+.weDidBtn{
+   /* This is the Last Button that is used on the Park page From this you can change the Color og Button and Also Button Text */ 
+  display: inline-block;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgb(62, 216, 236);
+  border-radius: 9999px; 
+  text-decoration: none !important;
+}
+.weDidBtn:hover{
+   /* This is the Last Button Hover State that is used on the Park page  From this you can change the Color og Button and Also Button Text */ 
+  background-color: rgb(109, 136, 253);
+  color: rgba(255, 255, 255, 1);
+}
+/* This is used adjusting the hover and not hover state of images present in the park page on 2nd Slider*/
+.cardImgCon{
+  /* height: 80px; */
+  position: relative;
+}
+.cardImgNotHover{
+  width: 100%;
+  border-radius: 3px;
+}
+.cardImgHover{
+  position: absolute;
+  width: 100%;
+  border-radius: 3px;
+  display: none;
+}
+.cardImgCon:hover .cardImgHover{
+  display: block;
+}
+.ImgCardH{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  line-height: 1rem;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+/* This is used for giving border to the images present on the third slider*/
+.gridImgCon{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.ImgCardD{
+  opacity: .5;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .7rem;
+  /* font-family: pixelfont,Helvetica Neue,Helvetica,Arial,sans; */
+  padding-top: 0.125rem;
+  margin-bottom: 0 ;
+}
+.slid3P{
+  color: rgba(38, 38, 38, 1);
+  line-height: 1.25rem;
+  font-size: .84rem;
+  /* font-family: pixelfont,Helvetica Neue,Helvetica,Arial,sans; */
+  white-space: pre-line;
+}
+.galCon{
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+/* This is used for giving Color to the Card Present on the 3rd Slider*/
+.galCard{
+  padding-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 0.25rem;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+  z-index: 50;
+}
+/* This is used for giving Color on Hover Present on the 3rd Slider*/
+.galCard:hover{
+  background-color: rgba(0, 0, 0);
+  color: white;
+}
+.galHead{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* font-family: SB,MBP,Helvetica Neue,Helvetica,Arial,sans; */ 
+}
+.galDesc{
+  font-size: .75rem;
+  line-height: 1rem;
+  /* font-family: pixelfont,Helvetica Neue,Helvetica,Arial,sans; */
+  padding-bottom: 0.5rem;
+}
+/* This is used for giving background image on the Blue Print Page on the park shape Grid*/
+.thePark{
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  width: 22vw;
+  height: 22vw;
+  max-height: 45vh;
+  max-width: 45vh;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #7eaeff;
+  border-radius: 50%;
+  background-color: #003668;
+  background-image: url('./images/bPPark.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+/* This is used for giving Button Colors to the Blue Print page present on the Button*/
+.theParkBtn,.bearMarketeBtn{
+  background-color: rgb(107, 155, 240);
+  color: rgb(0, 52, 103);
+  position: absolute;
+  padding: 0.2rem 0.625rem;
+  border-radius: 3px;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.parkHover{
+   /* In this you can change Park Hover Image */
+  opacity: 0;
+  display: none;
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/hoverPark.png');
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(200%);
+}
+.thePark:hover{
+  border-color: rgb(255,255,255);
+}
+.thePark:hover > .theParkBtn ,.sidePark:hover > .bearMarketeBtn , .centerDiv:hover > .bearMarketeBtn{
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+}
+.thePark:hover > .parkHover, .sidePark:hover > .sideParkHover, .centerDiv:hover > .centerDivHover{
+  display: block;
+  opacity: 1;
+}
+.MapMap{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+ /* In this where you can change he color of the Side bars Grid Borders  */
+.sidePark{
+  border-color: rgb(126, 174, 255);
+  width: 100%;
+   height: 100%;
+
+  border-style: solid;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid rgb(126, 174, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* In this where you can adjust the opacity of the sidebar hover */
+.sidePark:hover{
+  opacity: 1;
+  filter: brightness(200%);
+}
+.sideParkHover{
+  display: block;
+  opacity: 0;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  width: 100%;
+  /* height: 100%; */
+  height: 40vw;
+  max-height: 80vh;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(200%);
+}
+.bearMarkete{
+  /* This Image is linked for the side blueprint map shape  */
+  background-image: url('./images/bPBearMarkete.png');
+}
+.bearMarketeHover{
+  /* This Image is linked for the side blueprint map shape for the hover state  */
+  background-image: url('./images/BearMarketeHover.png');
+}
+.platForm{
+   /* In this you can link Platform Image  */
+  background-image: url('./images/bPPlatform.png');
+}
+.platFormHover{
+  background-image: url('./images/platFormHover.png');
+}
+/* In this where you can adjust the center Grid present on the BluePrint Page */
+.centerDiv{
+  border: 3px solid rgb(126, 174, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-color: rgb(126, 174, 255);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  /* height: 100%; */
+  height: 20vw;
+  max-height: 38vh;
+}
+.centerDiv:hover{
+  opacity: 1;
+  filter: brightness(200%);
+}
+.centerDivHover {
+  opacity: 0;
+  display: block;
+  position: relative;
+  z-index: 0;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(200%);
+  width: 100%;
+  /* height: 100%; */
+  height: 20vw;
+  max-height: 38vh;
+}
+
+/* These Images are Used for giving the Images to the Grid Present on the Center of the BlurPrint Page */
+.workShop{
+   /* height: 100%; */
+  background-image: url('./images/bPWorkShop.png');
+}
+.gallery{
+  background-image: url('./images/bPGallery.png');
+}
+.studio{
+  background-image: url('./images/bPStudio.png');
+}
+.boutique{
+  background-image: url('./images/bPBoutique.png');
+}
+.Opacity0{
+  opacity: 0;
+}
+.Opacity1{
+  opacity: 1;
+}
+.parkModel{
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 10000;
+  width: 100%;
+  height: 40vw;
+  border-top: 6px solid #fff;
+  border-bottom: 6px solid #fff;
+  background-color: rgba(0, 54, 104, 0.95);
+}
+.modelHeader{
+  height: 3.5rem;
+  border-bottom: 1px solid #fff;
+}
+.modelTitleText{
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.firstHeading{
+  position: relative;
+  z-index: 1;
+  color: #bb9772;
+  font-size: 1.25rem;
+  line-height: 140%;
+}
+.firstHeading.okb-bp {
+  color: #fff;
+}
+.greenTitle{
+  color: #19ab6e;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.greenTitle.makeYellow{
+  color: #f7c64c;
+}
+.greenTitle.makeBlue{
+  color: #6ccef5;
+}
+.futureNFT{
+  background-image: linear-gradient(90deg, #f7c64c, #f3eadb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.blueprintPage{
+  padding-top: 0px;
+}
+.okb-bp-progress{
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 0 auto;
+  border-radius: 3px;
+}
+.heading8{        /* This heading8 is used for the BluePrint Page First Heading*/
+  color: #7eaeff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Outfit,
+  sans-serif;
+  /* color: #bb9772; */
+  font-size: 1.5rem;
+  line-height: 110%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.h2Heading{  /* This h2Heading is used for the BluePrint Page Second Heading*/
+  /* margin-bottom: 0px; */
+  color: #7eaeff;
+  margin-top: 0px;
+  margin-bottom: 35px;
+  font-family: 'Cheddargothic sans',
+  Impact,
+  sans-serif;
+  /* color: #402d28; */
+  font-size: 4rem;
+  line-height: 110%;
+  font-weight: 500;
+}
+.blueprintBottomText{
+  color: #7eaeff;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 300;
+}
+.blueprintBottomSMText{
+  font-size: 0.875rem;
+  line-height: 125%;
+  text-align: left;
+  color: #7eaeff;
+}
+.okb-bp-contenttext{
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 300;
+}
+.manifestBtnCon{
+  display: inline-block;
+  margin-bottom: auto;
+  background-color: #7eaeff;
+  margin-top: 40px;
+  padding: 0.2rem 0.625rem;
+  border-radius: 3px;
+  color: #7eaeff;
+  max-width: 100%;
+  text-decoration: none;
+  cursor: pointer;
+}
+.okb-buttontext{
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.okb-buttontext.bp{
+  color: #003467;
+}
+.bp{
+  margin-bottom: 0px;
+}
+.meetTeamBtnCon{
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: auto;
+  border: 1px solid #7eaeff;
+  background-color: #003467;
+  padding: 0.2rem 0.625rem;
+  border-radius: 3px;
+  max-width: 100%;
+  color: #7eaeff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modelBackBtn{
+  display: flex;
+  padding: 0.2rem 0.625rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.modelCloseBtnText{
+  color: #003668;
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.145rem;
+  text-transform: uppercase;
+}
+.modelCloseBtnCon{
+  display: flex;
+  width: 18px;
+  height: 18px;
+  margin-left: 4px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  background-color: #003668;
+}
+.modelCloseBtnImg{
+  width: 8px;
+  height: 8px;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+.innerModel{
+  height: 88%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* for mobil view */
+.swiper-thumbs{
+  height: 100px;
+}
+.swiper-slide-thumb-active{
+  width: 20% !important;
+}
+.swipatbottom{
+  
+/* for mobil view  here you can change the middle div Color*/
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
+  width: 100%;
+  /* background-color: red; */
+  background-color: rgba(229, 229, 229, 1);
+  padding: 5px 10px;
+}
+.swipatbottom>.swiper>.swiper-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.swipatbottom>.swiper>.swiper-wrapper>.swiper-slide{
+  width: 30% !important;
+  margin-right: 0 !important;
+}
+.swipatbottom > .swiper > .swiper-wrapper > .swiper-slide > img,
+.swipatbottom>.swiper>.swiper-wrapper>.swiper-slide>div{
+  width:100%;
+}
+ /* This is used for the Mobile Slider Buttons  */
+.bottomSlidDiv{
+  background-color:rgba(255, 255, 255,1);
+  box-shadow:  0 0 transparent,0 0 transparent,0 1px 3px 0 rgba(0, 0, 0, 0.1),
+  0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  color:rgba(0, 0, 0);
+  border-radius: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  z-index: 50;
+  height: 100%;
+}
+ /* This is used for the Mobile Slider Present on Mobile View Where you can change Color of Slider icons  */
+.swiper-slide-thumb-active > .bottomSlidDiv{
+  background-color: rgb(53, 192, 192);
+  color: rgba(255, 255, 255, 1);
+}
+.Ctitle{
+  opacity: .4;
+  font-size: .65rem;
+  /* font-family: pixelfont,Helvetica Neue,Helvetica,Arial,sans; */
+}
+.Cdesc{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .65rem;
+  /* font-family: SB,MBP,Helvetica Neue,Helvetica,Arial,sans; */
+}
+/* end for mobil view */
+.mapContainer{
+  position: relative;
+  width: 40vw;
+  height: 80vh;
+}
+.part2MapMobile {
+  position: absolute;
+  top: 60vh;
+}
+.mapContainerMobile{
+  height: 110vh;
+}
+.bluePrintScreen>.navbar-collapse>.navbar-nav>.nav-link {
+  color: #007bff;
+}
+.footerDiv{
+  position: absolute;
+  /* position: sticky; */
+  bottom: 5px;
+  z-index: 99999;
+}
+.footerDiv.slid3{
+  bottom: -125px;
+}
+
+@media (max-width: 2880px) {
+
+
+
+}
+
+
+@media (max-width: 500px) {
+  .home{
+    height: auto;
+  }
+  .homeBgCon,.homeRainBow{
+    height: 87vh;
+  }
+  .homeRainBow {
+    /* left: 10px; */
+    /* top: -160px;
+      height: 135vh; */
+    /* height: auto; */
+    width: 100%;
+  }
+  /* .homeRainBow {
+    height: 100%;
+  } */
+  .header {
+    height: auto;
+  }
+  .sidePark{
+    height: 50vh;
+  }
+  .parkModel{
+    height: 196vw;
+  }
+  .slideCard2 {
+    min-height: 100vh;
+  }
+  .h2Heading{
+    font-size: 3rem;
+  }
+  .parkModel > .modelHeader > .modelTitleCon,.modelBackBtnCon{
+    width: 50%;
+  }
+  .blueprintPage {
+    padding-top: 0px;
+  }
+  .modelHeader{
+    height: auto;
+  }
+  .mapContainer{
+    height: 60vh;
+  }
+  .centerDiv{
+    height: 28vh;
+    max-height: 48vh;
+    position: relative;
+  }
+  .bearMarketeBtn.workShopBtn{
+    position: absolute;
+    top: 0;
+    left:0;
+  }
+  .bearMarketeBtn.glleryBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .bearMarketeBtn.studioBtn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .bearMarketeBtn.boutiqueBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .thePark{
+    width: 60vw;
+    height: 60vw;
+    max-height: 70vh;
+  }
+  .navbar-nav{
+    margin-top: 20px;
+  }
+  .nav-link{
+    margin-right: 0px;
+  }
+  .c1Head {
+    font-size: 4rem;
+  }
+  .sliderGirl{
+    height: 40vh;
+    bottom: 0px;
+  }
+  
+  .homeCloud{
+    width: 65%;
+    height: 75%;
+  }
+}
+
+@media (max-width: 414px){
+  .parkModel {
+    height: 239vw;
+  }
+} 
+
+
+
+
+ /* From Here you can see Each Page Header where we can Update the colors also the Hover effect on the buttons and also I changed the Class Names where you can see easily where the navbar belongs too   */
+
+
+.home_page_navbar_home_icon{
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+ 
+  border-radius: 10px;
+  border-color: #fd845f;
+  background-color: transparent;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  color: #fff !important;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.home_page_navbar_other_icons {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 10px;
+  background-color: #fd845f;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  color: #bb9772;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.home_page_navbar_other_icons:hover {
+  
+  background-color:  #fd6a65  ;
+ 
+  color: rgb(0, 0, 0);
+  
+}
+
+.home_page_navbar_garden_icons{
+
+  background-color: #d3f8ff;
+    opacity: 0.35;
+    color: #bb9772;
+    cursor: not-allowed;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 10px;
+ 
+  border-style: solid;
+    border-width: 1px;
+    border-color: #bb9772;
+   
+    color: #bb9772;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+
+
+.park_page_navbar_other_icon {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(194, 102, 255, 0.63) !important;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  color: #ffffff !important;
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.park_page_navbar_other_icon:hover {
+  
+  background-color:  #fd6a65  ;
+ 
+  color: rgb(0, 0, 0);
+  
+}
+
+
+
+.park_page_navbar_garden_icon{
+
+  
+    opacity: 0.35;
+    color: #bb9772;
+    cursor: not-allowed;
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  background-color: rgba(224, 102, 224, 0.2) !important;
+  border-style: solid;
+    border-width: 1px;
+
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.park_page_navbar_park_icon{
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 10px;
+ 
+  border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255, 3, 255, 0.76);
+   
+    color: #ffffff !important;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+
+  font-size: 1rem;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+.blue_print_page_navbar_other_icons {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  background-color: #0d2a57;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  color: #7eaeff;
+  font-size: 1rem;
+  border: none;
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.blue_print_page_navbar_other_icons:hover {
+  
+  background-color:  #7eaeff  ;
+ 
+  color: rgb(0, 0, 0);
+  
+}
+.blue_print_page_navbar_blueprint_icon {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 0.2rem 0.625rem;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  border-radius: 3px;
+  background-color: #0d2a57;
+  -webkit-transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  transition: background-color 200ms cubic-bezier(.215, .61, .355, 1);
+  color: #7eaeff;
+  border-color: #7eaeff;
+  font-size: 1rem;
+
+  line-height: 140%;
+  font-weight: 500;
+  letter-spacing: 0.145rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+
+
+
+.bTag {
+  font-family: Open Sans, Arial, sans-serif;
+  font-size: 14px;
+  color: #666;
+  /* background-color: #B8BCC0; */
+  line-height: 1.7em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+
+}
+
+.pageCon {
+  background-color: #4343 !important;
+  background-image: linear-gradient(180deg, #4343 0%, #71fcd9c2 100%) !important;
+
+  /* min-height: 2013.5px; */
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.mainContent {
+  background-image: url(./images/value.jpg) !important;
+  overflow-x: hidden;
+  background-size: cover !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed;
+  z-index: 1111;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.joinComb{
+  /* font-size: 34px; */
+
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+@media screen and (min-width:1200px) {
+  .joinComb{
+    /* font-size: 34px; */
+  
+
+    font-size: 60px;
+   
+  }
+}
+.joinCom{
+  /* font-size: 34px; */
+
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 44px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+.joinComs{
+  /* font-size: 34px; */
+  background-color: rgba(224, 102, 224, 0.2);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.3em;
+}
+@media screen and (min-width:1200px) {
+  .joinComs{
+    /* font-size: 34px; */
+  
+
+    font-size: 20px;
+   
+  }
+}
+.joinComss{
+  /* font-size: 34px; */
+
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1.7em;
+}
+.disclaimer{
+  /* font-size: 34px; */
+  background-color: rgba(224, 102, 224, 0.2);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  letter-spacing: 1.3px;
+  line-height: 1.8em;
+}
+.fContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .fContainer > img{
+  margin-right: 10%;
+} */
+img.F1Log {
+  margin-top: 10px;
+  width: 12%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+img.F2Log {
+  /* height: 50px; */
+  width: 12%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+img.F3Log {
+  height: 100%;
+  width: 12%;
+  width:auto;
+}
+.footer{
+  background-color: #043051;
+  min-height: 60px;display: flex;
+  align-items: center;
+}
+.footerInfo {
+  text-align: left;
+  color: #666;
+}
+
+.hwrap {
+	overflow: hidden; /* HIDE SCROLL BAR */
+	background: #4343; /* SET BACKGROUND COLOR */
+  }
+   
+  /* (B) MOVING TICKER WRAPPER */
+  .hmove { display: flex; }
+  
+  /* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+  .hitem {
+	flex-shrink: 0;
+	width: 100%;
+	color: #ffec3c;
+	box-sizing: border-box;
+	padding: 20px;
+	text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  }
+  @media screen and (min-width:1000px) {
+    .hitem {
+      
+      width: 30%;
+     
+      
+      }
+  }
+  .hitems   {
+    flex-shrink: 0;
+    width: 100%;
+    color: #fffb1e;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+
+    }
+
+    @media screen and (min-width:1000px) {
+      .hitems   {
+        font-size: 1rem;
+        width: 50%;
+        }
+    }
+    
+     
+   
+  /* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+  /* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+  @keyframes tickerh {
+	0% { transform: translate3d(100%, 0, 0); }
+	100% { transform: translate3d(-400%, 0, 0); }
+  }
+  .hmove { animation: tickerh linear 40s infinite; }
+  .hmove:hover { animation-play-state: running; }
+
+  @media only screen and (max-width: 768px) {
+	.hmove { animation-duration: 20s; }
+  }
+  
+  .ps{
+    font-weight: 900;
+    text-align: center;
+    font-size: 20px;
+  
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgb(255, 240, 31), rgb(176, 255, 86), rgb(235, 156, 255));
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+    }
+    .info_paragraph{
+      font-size: 20px;
+      font-weight: 700;
+    
+      line-height: 2.2em;
+      text-align: center;
+      color: #fff;
+      background-color: rgba(224, 102, 224, 0.2);
+      border-radius: 10px;
+    
+    }
+
+    
+.card {
+  font-weight: bold;
+  padding: 1em;
+  text-align: right;
+  color: #181a1a;
+  
+  width:  300px;
+  height: 400px;
+  box-shadow: 0 1px 5px #00000099;
+  
+  border-radius: 10px;
+  background-image: url('../src/images/eric.jpg');
+  background-size: cover;
+  
+  position: relative;
+  
+  transition-duration: 300ms;
+  transition-property: transform, box-shadow;
+  transition-timing-function: ease-out;
+  transform: rotate3d(0);
+}
+
+.card:hover {
+  transition-duration: 150ms;
+  box-shadow: 0 5px 20px 5px #00000044;
+}
+
+.card .glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  
+  background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+}
+
+
+.info_paragrap{
+  font-size: 15px;
+  font-weight: 600;
+
+  line-height: 4em;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(224, 102, 224, 0.2);
+  border-radius: 10px;
+}
+.info_paragraph{
+  font-size: 20px;
+  font-weight: 700;
+
+  line-height: 2.2em;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(224, 102, 224, 0.2);
+  border-radius: 10px;
+
+}
+
+.roadmap_heading{
+  font-size: 17px;
+  font-weight: 900;
+  color: #42e9ff;
+
+}
+.roadmap_text{
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.containe {
+	position : relative;
+	width : 1100px;
+	display : flex;
+	align-items : center;
+	justify-content : center;
+	flex-warp : warp;
+	padding : 30px;  
+  }
+  
+  .containe .cards {
+	position: relative;
+	max-width : 300px;
+	height : 215px;  
+	background-color : #4343;
+	margin : 30px 10px;
+	padding : 20px 15px;
+	
+	display : flex;
+	flex-direction : column;
+	box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+	transition : 0.3s ease-in-out;
+	border-radius : 15px;
+  }
+  .containe .cards:hover {
+	height : 320px;    
+  }
+  
+  
+  .containe .cards .image {
+	position : relative;
+	width : 260px;
+	height : 260px;
+	
+	top : -40%;
+	left: 8px;
+	box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+	z-index : 1;
+  }
+  
+  .container .cards .image img {
+	max-width : 100%;
+	border-radius : 15px;
+  }
+  
+  .containe .cards .content {
+	position : relative;
+	top : -140px;
+	padding : 10px 15px;
+	color : #FFF;
+	text-align : center;
+	
+	visibility : hidden;
+	opacity : 0;
+	transition : 0.3s ease-in-out;
+	  
+  }
+  
+  .containe .cards:hover .content {
+	 margin-top : 30px;
+	 visibility : visible;
+	 opacity : 1;
+	 transition-delay: 0.2s;
+	
+  }
+
+  .navbar-toggler {
+    background-color: aliceblue !important;
+  }
